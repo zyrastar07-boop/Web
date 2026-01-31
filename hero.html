@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aberham | Digital Creator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#0d7ff2",
+                "background-light": "#f5f7f8",
+                "background-dark": "#050a0f",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .liquid-bg {
+            background: radial-gradient(circle at 20% 30%, rgba(13, 127, 242, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(147, 51, 234, 0.1) 0%, transparent 40%),
+                        radial-gradient(circle at 50% 50%, rgba(161, 161, 170, 0.05) 0%, transparent 50%);
+            background-color: #050a0f;
+        }
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-title {
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Wrapper with Liquid Background -->
+<div class="relative min-h-screen w-full flex flex-col liquid-bg overflow-x-hidden">
+<!-- Floating Navigation Bar -->
+<nav class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+<div class="glass-pill rounded-full flex items-center justify-between w-full max-w-[960px] px-6 py-3">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="text-lg font-bold tracking-tight">Aberham</span>
+</div>
+<!-- Nav Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">Work</a>
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-slate-400 hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<!-- CTA -->
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex bg-primary hover:bg-primary/90 text-white text-xs font-bold px-5 py-2 rounded-full transition-all duration-300 shadow-lg shadow-primary/20">
+                        Get in touch
+                    </button>
+<div class="size-8 rounded-full overflow-hidden border border-white/10">
+<img class="w-full h-full object-cover" data-alt="Close up minimalist portrait of a creator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC55mqUg1gm09NIs_OA3m2IDqWGh74M4euvPfrKmGLAwenDIUGvdl_e-fG4_UuGC2ZZdyP6ud4UN5moSiUWhg2ihArIqNRa7v-_NN3hpDYFlCzwYZuBsTWuAJSNhcdqPP--KbFVPv56FiOc1Rcz9b1iovuVTCw0kXnv218xwN5Een6ODNuCy6BtCWULkH9ulorFvClmFXHhozwjPmKb6EAY7ltF404axGTwBTLCPbUOv0H3tfhi9aCTYwv1emTcCsS1UEzeDHgi4jxZ"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section Content -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 pt-20">
+<div class="max-w-[960px] w-full text-center space-y-8">
+<!-- Status Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#90adcb] text-xs font-medium backdrop-blur-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Based in London — Available for 2024 projects
+                </div>
+<!-- Main Headlines -->
+<div class="space-y-4">
+<h1 class="hero-title text-7xl md:text-9xl font-black text-white leading-none">
+                        Aberham
+                    </h1>
+<p class="text-xl md:text-2xl font-light text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                        Designing the future. <span class="text-white font-medium">Securing it.</span>
+</p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+<button class="w-full sm:w-auto min-w-[180px] bg-primary text-white font-bold h-14 px-8 rounded-xl flex items-center justify-center gap-2 group transition-all hover:scale-105 active:scale-95 shadow-xl shadow-primary/30">
+                        View Projects
+                        <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="w-full sm:w-auto min-w-[180px] bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold h-14 px-8 rounded-xl transition-all">
+                        Our Process
+                    </button>
+</div>
+</div>
+</main>
+<!-- ToolBar / Scroll Indicator -->
+<footer class="w-full flex justify-center py-10">
+<div class="flex flex-col items-center gap-4">
+<div class="flex gap-4">
+<button class="p-3 rounded-full bg-white/5 border border-white/10 text-white/50 hover:text-white transition-colors">
+<span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="flex gap-6 opacity-40">
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold">Strategy</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary">•</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold">Design</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary">•</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold">Security</div>
+</div>
+</div>
+</footer>
+<!-- Background Accents (Visual Depth) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden -z-10">
+<div class="absolute top-[10%] left-[5%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[10%] right-[5%] w-[30%] h-[40%] bg-purple-600/5 rounded-full blur-[120px]"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03]"></div>
+</div>
+</div>
+</body></html>

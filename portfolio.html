@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Liquid Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-shadow {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative min-h-screen flex flex-col">
+<!-- Navigation Bar -->
+<header class="sticky top-0 z-50 w-full px-6 lg:px-40 py-4 glass">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">blur_on</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Aberham</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium opacity-70 hover:opacity-100 transition-opacity" href="#">Work</a>
+<a class="text-sm font-medium opacity-70 hover:opacity-100 transition-opacity" href="#">About</a>
+<a class="text-sm font-medium opacity-70 hover:opacity-100 transition-opacity" href="#">Services</a>
+<a class="text-sm font-medium opacity-70 hover:opacity-100 transition-opacity" href="#">Contact</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide transition-all shadow-lg shadow-primary/20">
+                    Let's Connect
+                </button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1200px] mx-auto px-6 lg:px-10 py-12">
+<!-- Headline Section -->
+<div class="mb-12 text-center">
+<h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
+                    Liquid Gallery
+                </h1>
+<p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                    A curated selection of digital experiences where art meets engineering. Exploring the boundaries of web, motion, and security.
+                </p>
+</div>
+<!-- Filter Chips -->
+<div class="flex justify-center gap-3 mb-16 overflow-x-auto pb-4 no-scrollbar">
+<button class="px-6 py-2 rounded-full bg-primary text-white text-sm font-medium whitespace-nowrap">All Work</button>
+<button class="px-6 py-2 rounded-full glass text-sm font-medium hover:bg-white/10 transition-colors whitespace-nowrap">Web Design</button>
+<button class="px-6 py-2 rounded-full glass text-sm font-medium hover:bg-white/10 transition-colors whitespace-nowrap">Video &amp; Motion</button>
+<button class="px-6 py-2 rounded-full glass text-sm font-medium hover:bg-white/10 transition-colors whitespace-nowrap">Cybersecurity</button>
+</div>
+<!-- Editorial Project Grid -->
+<div class="editorial-grid">
+<!-- Main Featured Card (Web Design) -->
+<div class="col-span-12 lg:col-span-8 group relative overflow-hidden rounded-xl h-[500px] card-shadow border border-white/5 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Futuristic minimalist web interface layout design" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAf1U-UpPrdUszKqU37IgYW_WIYB2mm1WPuWSjzu8CBV8R89cs-54D_l_jI8yihz4RRg99dLak4wLxBbA9s8epWNSIch2Qyuy2L9XgsKXO5FOT410OwP8Ew2SC0D41tdTTluzOjdChqISHoGjho60xKpeg8mJ0EKrObnVyvqoCWiajyLih01Nf9zeX3-Qp0gVwb0fK8VdjpZ0iviPLhROdpayr3X39X73UYAYF3ibL-WjtSyLfT0B6SsVfebLvGGNXxgDbP2KmjCmrH');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-8 flex justify-between items-end">
+<div>
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Web Design • 2024</span>
+<h3 class="text-3xl font-bold text-white mb-2">Nexus OS Interface</h3>
+<p class="text-white/60 text-sm max-w-md">Next-generation operating system interface designed for seamless glassmorphic spatial computing.</p>
+</div>
+<div class="size-12 rounded-full glass flex items-center justify-center group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-white">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Video Card -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded-xl h-[500px] card-shadow border border-white/5 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic slow motion water abstract visual" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRRm-VJVxz5BQlEwQBvExGW2kn4dr4HKJCJ2l58jnV-T27mmT8Tg684rrAndyQwbSM3cTfn-woWUt2iKKhKMzrgi2atL_503KHxwavm3roLEpSmD-jr8SRmc9RPqJl7EDUV5_WD_NMQKNuM2Fn8-Ha6iveza9jP6jSfT3wTtRjYehQ1aYUd_S7OypH1sMfPjjU7iE93X8DxArCC5ZUDS_SuLBP3Sc6FAkWMeitUcSYH-RVqqlfM_Cd2ww1jak-kRybpoKXbSmIqwV3');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-16 rounded-full glass flex items-center justify-center border border-white/20 backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Cinematic Motion</span>
+<h3 class="text-2xl font-bold text-white">Liquid Dynamics</h3>
+</div>
+</div>
+<!-- Security Card -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded-xl h-[400px] card-shadow border border-white/5 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Digital circuit board with glowing blue neon lines" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA494u9-DgBaFIwC7GbrnuoNfsqkP91EeI9sNnzFvVWnRZxB96H1gxWwlKefjgcpIX1fODSQqxOcEIv98pw-oiABSjX_rJKsxuVunSGAILMtQiE_JKVIJQJeyOF8EyB1buQphnGezhHndvchezDeMEfVXXeFIOumW1jrP7tg-DFRpJkRoA9dl_5jZiRigdBbr_yhDyZtR6ahjBjIXsv0obcUTLppnEIk5SWXifskNabtjVCVn_rjQq7x5wAaGvBHlH3_znvyUv0I_oI');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-8">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">shield</span>
+<span class="text-primary text-xs font-bold uppercase tracking-widest block">Cybersecurity</span>
+</div>
+<h3 class="text-xl font-bold text-white">Quantum Encryption Hub</h3>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded-xl h-[400px] card-shadow border border-white/5 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract purple and blue fluid gradient background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgmr_nLfzO7WFWToI_bvhMY0onE_XQa1R6hC5d6MCQAoEvlw62h1XAXCaQmU306B-6jrMv_ZVbADcRZlNIpVSUR_J3SsO73sOh0BHko1KsoTBwli6EKhAChaV6FgCAdYF-tG39BnWD4ByXSaYb-UeeSS4a1We3KxcQ5cw2NyTbymn0jGw7RyfUIjyhNPEmxG2sLy6N4__cTS-ZSKOLSwauuEZYmK33hTgmetex1tdXtl_oJot7KRyz2ehUgaqKzw0LmiGK3nAun89q');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Brand Storytelling</span>
+<h3 class="text-xl font-bold text-white">Ethereal Branding</h3>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="col-span-12 md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded-xl h-[400px] card-shadow border border-white/5 cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern mobile app design on a smartphone screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA87NE-v2T5ad9BujV4NUGXto-aAn6gTlANGBUnkI14mN85QErNyMWz4vmipFCmFZdqrBf0p93OWJcxLppZx6dIt_6_cAaecHi2Cvsrd3Jn3zcJgvY3fGhLKZhAfa3D7ZdepYz4UDklxnwfwx_xVLrSAGT_aIIZiNCxxSROz13L4inF55bgfGplO0AMGqpc2Gm7MIqFL2mPKMOwQQr76Qp3KVkH6Z5h09Td09-c-kQurdlXAkWkkDWMaQ9v9MsPBBVYWnOy_UENgrMJ');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-8">
+<span class="text-primary text-xs font-bold uppercase tracking-widest mb-2 block">Mobile Eco</span>
+<h3 class="text-xl font-bold text-white">Flow App Ecosystem</h3>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<section class="mt-24 mb-12 p-12 rounded-xl glass text-center relative overflow-hidden">
+<div class="absolute -top-24 -left-24 size-64 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-24 -right-24 size-64 bg-primary/10 blur-[120px] rounded-full"></div>
+<h2 class="text-3xl font-bold mb-6 relative z-10">Ready to build something liquid?</h2>
+<p class="text-slate-400 mb-8 max-w-lg mx-auto relative z-10">Currently accepting new projects for 2024. Let's create a digital masterpiece together.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-xl shadow-primary/20">
+                        Start a Project
+                    </button>
+<button class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">
+                        View Resume
+                    </button>
+</div>
+</section>
+</main>
+<footer class="w-full max-w-[1200px] mx-auto px-10 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">blur_on</span>
+<span class="font-bold">Aberham</span>
+</div>
+<p class="text-slate-500 text-sm">© 2024 Liquid Gallery. Built with precision.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</footer>
+</div>
+</body></html>

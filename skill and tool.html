@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skills &amp; Tools | Aberham</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#050505",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
+        .glass-panel:hover {
+            border: 1px solid rgba(13, 127, 242, 0.4);
+            background: rgba(13, 127, 242, 0.05);
+        }
+        .glow-icon {
+            filter: drop-shadow(0 0 8px rgba(13, 127, 242, 0.6));
+        }
+        .liquid-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .liquid-float-delayed {
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary/30">
+<div class="relative min-h-screen w-full flex flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 flex justify-center py-6 px-4">
+<nav class="glass-panel px-6 py-2 rounded-full flex items-center gap-8 border-white/5">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary glow-icon">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="font-bold tracking-tight">Aberham</span>
+</div>
+<div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/70">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">Work</a>
+<a class="text-white" href="#">Skills</a>
+<a class="hover:text-primary transition-colors" href="#">About</a>
+</div>
+<button class="bg-primary hover:bg-primary/80 text-white text-xs font-bold px-4 py-2 rounded-full transition-all">
+                    Hire Me
+                </button>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col items-center pt-32 pb-20 px-4 md:px-20 max-w-[1400px] mx-auto w-full">
+<!-- Page Heading -->
+<div class="w-full mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="flex flex-col gap-2">
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
+                        Skills &amp; Tools
+                    </h1>
+<p class="text-[#90adcb] text-lg max-w-xl">
+                        A curated collection of technical expertise and creative instruments across the digital landscape.
+                    </p>
+</div>
+<button class="flex items-center gap-2 px-6 py-3 glass-panel rounded-xl text-sm font-bold hover:bg-white/10 transition-all border-white/10">
+<span class="material-symbols-outlined text-sm">download</span>
+                    View Resume
+                </button>
+</div>
+<!-- Bento Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 w-full auto-rows-[100px]">
+<!-- Cybersecurity Panel (Large) -->
+<div class="md:col-span-8 md:row-span-4 glass-panel rounded-3xl p-8 flex flex-col justify-between liquid-float border-t-primary/30 border-t-2 relative overflow-hidden group">
+<div class="absolute -right-20 -top-20 size-64 bg-primary/10 blur-[100px] rounded-full group-hover:bg-primary/20 transition-all"></div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h2 class="text-2xl font-bold mb-1">Cybersecurity</h2>
+<p class="text-[#90adcb] text-sm">Offensive &amp; Defensive Security</p>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-widest">Advanced</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4">
+<div class="size-16 rounded-2xl bg-black/40 flex items-center justify-center border border-white/5 glow-icon">
+<span class="material-symbols-outlined text-3xl text-primary">terminal</span>
+</div>
+<div>
+<h3 class="font-bold">Kali Linux</h3>
+<p class="text-xs text-[#90adcb]">Primary Pentest OS</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="size-16 rounded-2xl bg-black/40 flex items-center justify-center border border-white/5 glow-icon">
+<span class="material-symbols-outlined text-3xl text-primary">radar</span>
+</div>
+<div>
+<h3 class="font-bold">Nmap</h3>
+<p class="text-xs text-[#90adcb]">Network Recon</p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="size-16 rounded-2xl bg-black/40 flex items-center justify-center border border-white/5 glow-icon">
+<span class="material-symbols-outlined text-3xl text-primary">security</span>
+</div>
+<div>
+<h3 class="font-bold">Metasploit</h3>
+<p class="text-xs text-[#90adcb]">Exploitation</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex -space-x-2">
+<div class="size-8 rounded-full border-2 border-[#101922] bg-center bg-cover" data-alt="Cybersecurity certificate icon 1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2Atz0iiEyr1CQXwjxuhRWq7NzLjJlXUZcyu1OUPLoPw_aPzoKkMTCVZFfGHT6Txb3XytA4eFjj5a85JCBhTpBKkPOFMEDU1dPMgE5lX5V9Z7q_7Ce37EpKsX8P-M-oyDDXCGh0cC-0hd167wetYE2MxJNpJwVQaBvynnvNu5pAIjLci3MDHuCY_g7IqR_9V9dZ-0zGpm6iafSAG2DBqrSVC4WAgLgWkiW8ETSjIG70TYmJGF6Q9JgMVjBXrW1SMlWwIwjQEshS9cG')"></div>
+<div class="size-8 rounded-full border-2 border-[#101922] bg-center bg-cover" data-alt="Cybersecurity certificate icon 2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbfbyBz0gfppy45o8mQ1DZxHMFlPRNUzypOH4d8Ekeb9U-mc-BPFHGKXyMau9Af1cPPNRZ1trYlhc74JT271TRJb7IS-U7h-SlLeZnwLDhwV9JgmSAXe_tigV796qmEUi_Gx9RQx_9hz7Tqv2Hlls68l7o66RHwd3v2Z_aqmmObaFzO6WN_QLnR0Wiwi_W9JFzKcqLEVP_yE2raP_YPfA9GrWJstArPYeOvl6ZcOvme92btXWNkSMdtM5R-efXv2hDC_mSXYPPlqYi')"></div>
+</div>
+<p class="text-xs text-white/50">CompTIA Security+ Certified</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-1.5 w-24 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+<span class="text-[10px] font-mono">92%</span>
+</div>
+</div>
+</div>
+<!-- Development Panel (Medium) -->
+<div class="md:col-span-4 md:row-span-6 glass-panel rounded-3xl p-8 flex flex-col liquid-float-delayed">
+<div class="mb-10">
+<h2 class="text-2xl font-bold mb-1">Development</h2>
+<p class="text-[#90adcb] text-sm">Full-stack Engineering</p>
+</div>
+<div class="space-y-6 flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">code</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">HTML/CSS/JS</h3>
+<div class="flex gap-1 mt-1">
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">data_object</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">React / Next.js</h3>
+<div class="flex gap-1 mt-1">
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">integration_instructions</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">Python / Django</h3>
+<div class="flex gap-1 mt-1">
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary">database</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">PostgreSQL</h3>
+<div class="flex gap-1 mt-1">
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-primary rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+<div class="size-1 bg-white/20 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 bg-black/40 rounded-2xl p-4 border border-white/5">
+<div class="flex items-center gap-2 mb-2">
+<div class="size-2 bg-red-500 rounded-full"></div>
+<div class="size-2 bg-yellow-500 rounded-full"></div>
+<div class="size-2 bg-green-500 rounded-full"></div>
+<span class="text-[10px] text-white/30 ml-2 font-mono">index.js</span>
+</div>
+<code class="text-[10px] font-mono text-primary/80 block">
+                            const dev = {<br/>
+                              focus: 'efficiency',<br/>
+                              passion: 'clean_ui',<br/>
+                              tools: ['React', 'TS']<br/>
+                            };
+                        </code>
+</div>
+</div>
+<!-- Infrastructure Panel (Small-Medium) -->
+<div class="md:col-span-4 md:row-span-4 glass-panel rounded-3xl p-6 liquid-float-delayed flex flex-col">
+<h3 class="text-lg font-bold mb-4">Infrastructure</h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-white/5 rounded-2xl p-4 flex flex-col items-center gap-2 border border-white/5 hover:border-primary/20 transition-all">
+<span class="material-symbols-outlined text-white/60">cloud</span>
+<span class="text-xs font-bold">AWS</span>
+</div>
+<div class="bg-white/5 rounded-2xl p-4 flex flex-col items-center gap-2 border border-white/5 hover:border-primary/20 transition-all">
+<span class="material-symbols-outlined text-white/60">box</span>
+<span class="text-xs font-bold">Docker</span>
+</div>
+<div class="bg-white/5 rounded-2xl p-4 flex flex-col items-center gap-2 border border-white/5 hover:border-primary/20 transition-all">
+<span class="material-symbols-outlined text-white/60">settings_ethernet</span>
+<span class="text-xs font-bold">Linux OS</span>
+</div>
+<div class="bg-white/5 rounded-2xl p-4 flex flex-col items-center gap-2 border border-white/5 hover:border-primary/20 transition-all">
+<span class="material-symbols-outlined text-white/60">storage</span>
+<span class="text-xs font-bold">Vercel</span>
+</div>
+</div>
+<div class="mt-auto pt-6 flex flex-col gap-2">
+<p class="text-[10px] text-[#90adcb] uppercase tracking-widest font-bold">Server Health</p>
+<div class="flex items-center gap-1">
+<div class="h-1 flex-1 bg-green-500 rounded-full"></div>
+<div class="h-1 flex-1 bg-green-500 rounded-full"></div>
+<div class="h-1 flex-1 bg-green-500 rounded-full"></div>
+<div class="h-1 flex-1 bg-green-500/20 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Creative Panel (Small-Medium) -->
+<div class="md:col-span-4 md:row-span-2 glass-panel rounded-3xl p-6 liquid-float flex items-center gap-6 group overflow-hidden relative">
+<div class="absolute -right-10 -bottom-10 size-32 bg-purple-500/10 blur-3xl rounded-full"></div>
+<div class="size-16 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center shrink-0 shadow-lg shadow-purple-500/20">
+<span class="material-symbols-outlined text-3xl text-white">palette</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-bold">Creative Suite</h3>
+<p class="text-xs text-[#90adcb]">PS, AI, PR, Figma</p>
+<div class="flex gap-2 mt-2">
+<div class="size-4 rounded bg-white/10 border border-white/5"></div>
+<div class="size-4 rounded bg-white/10 border border-white/5"></div>
+<div class="size-4 rounded bg-white/10 border border-white/5"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Tools Marquee (Static Representation) -->
+<div class="w-full mt-24 border-t border-white/5 pt-10 flex flex-wrap justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="Github icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCz2xmVPFkTN2PW4Xb95IUDS3aniqHYLohhYDaKeTZXL53E5INptVLDoMo0lYUUSpoOapFNtnHM34Wo4fSOOx1Uw_VDDj3yaqbT5VdY4_suFAXAeGqgz2MiI9_aFxD0yw5nmuM16K3Urv0w4HpESfJ_JRmVIULPQYRTr7IZE2CsdgysYzKCTb6e3cRUu_iM3ZF2U0ggUWg3stozbXkitLB8nWp5xaInFlxpq0t00UigTXqbojMSsKDK6PjjGkxxjpAywI5u_HN4YkzB')"></div>
+<span class="text-sm font-medium">GitHub</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="VS Code icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB82epUJQnm_D5psrzhJq77ZkHRX3Ukh1a0C7lnk8Nl_K2oGRKRfqS2RxqT7Hez5oIG9CJVFWfwuGPwtrsNKENxMwbFf1YAeCObjXDJkeHQ6tbweT0EbvjhIVStBWX6L7isF0B-JJGPwkSj2QgvwaxuHhSHBvi_JPXVegMmMkGj61vXTT0ipMtWNqXBpZrSc-My80J9pdMjTZUt0kJwZ3bZa4wNYkOrE55LP0sv_ecrXhxRaGH4aizhMTnDFUXpnbf81DnrV-bgQmFl')"></div>
+<span class="text-sm font-medium">VS Code</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="Figma icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxPDPqHp-EEf93zLALiVd8hGbTk0_7duCrF5AkWgFOmSXGmKCycMe1GN435A4mloc8VSwflL_WcxP1TjQpLjWrRcQ727q1C5Vz-k55yvkKSaENLaQu4ulrQvd0iJeixqxsy0nL5t8L9a-pTge2jKBXx5bQCjyDnvBLCuwJ_hv2sFKgA4v8NTuuCfCs8CaMcchmIzR9rTS_qcqqPmZsL-7RxKZaWu0NuaCc8Op94JgYC3hoO1hqW6jT29N6hNtkT5GC1eHqsakbfOtu')"></div>
+<span class="text-sm font-medium">Figma</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="Terminal icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9zcZZIwL3HJugcUX88Wmadw1Ip6QHvSfAcqf4dhh_oVVPfjvmYhRUQLxPRqgNwQGPwWU8N5CErCyBSHfmgP8phb_C_Ya_jc6z6IlsKIP26YJRIxZhn0DS7u3bRNSW2c2xfzjkWbpeBgsLL5CIQS8OCetTfXlB0ChGc-QSiEJay4Bt6LDiznf8jOrXTr8MBFewGPYYAio1FQQm09CqULXD1xrSTrMYVuTy_OM7xIFRXDhFpSG4aefPfQ-_fwGSK8-q_Usd1F9N6lGb')"></div>
+<span class="text-sm font-medium">iTerm2</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="Postman icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1nDo_iKS2Itnod6yL9BFyns2B8ZfovRhVYk1AQNx91x_KFaWbsRjGWMn5xd63WuBqrLIudikWXM0EtVd7jW2Y83ikwBd155cuqF2z_glqUsgCNpS3LplFNWm2ByzTDaSG1A__BNmwnpWuVWspZvzbnB6QX10J5HCfoOkNdG3JP3fQDPnoUrdzz5CUos71JwH42ilvY96iczT-0BvY4dD1IML6V31uXQ_AEBo95i2U_zzV1EB_sCq5Lr6WdtO6CbUWhLR5sAZG1jjI')"></div>
+<span class="text-sm font-medium">Postman</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-6 bg-center bg-cover rounded-sm" data-alt="Sentry icon logo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACTiQBYMN9KekqEra_VfbCf8ySBVGiLeVbb8n5Dfl_RWPQT8d083y4KZmQip-Z2jGnWrDs6whtKVp4lsEm9Pi6m1pnPazD91tVbSrAq0U0j2J9yC3NDtd0ffFa4x_VhPDkolOSdf5Dm96wY0cjHkJTsCLU9G0NZgrGgvxKOVnzG77KQwFwreSQ5f3OOpYhAm08_4ihQ7mkn-EhwEk8-Uh15NcUYL2riigWk1TeTIYJXvZYvOSYRCQ7GRzMIOZ3fW1A_NLAJojeYbbR')"></div>
+<span class="text-sm font-medium">Sentry</span>
+</div>
+</div>
+</main>
+<!-- Profile Bar -->
+<footer class="fixed bottom-6 left-1/2 -translate-x-1/2 w-auto">
+<div class="glass-panel px-4 py-3 rounded-2xl flex items-center gap-4 border-white/10">
+<div class="relative">
+<div class="size-10 rounded-full bg-center bg-cover border border-white/20" data-alt="Aberham professional portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAm-pvcw0-Ss5NBPELsKsOdd-WuhRQnd7Jgk5qOjDiBT66EskfvrFcP4m2Iu98C3TMBweesPsEN1JJ0UHdBszk5upJbhhQfbL_8yJY8aXUIpLvUnFF76Pvy04XbgJzxWy_dYulPMsSt0z--1zo5B7x0_A3WzaFsby1rhTe6ORxDsMesYkyNEFkvMeMYZQW6SD47ua0_1m_9TDfskzrJt0cMYho-t3X45h6fuq8wG00q4WxIJFz3PqQUM_vSl9oJvaQ_a_179-1ADJ_h");'></div>
+<div class="absolute bottom-0 right-0 size-3 bg-green-500 rounded-full border-2 border-[#101922]"></div>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-bold leading-none">Available for Work</span>
+<span class="text-[10px] text-[#90adcb]">Seattle, WA — 10:45 AM</span>
+</div>
+<div class="h-8 w-px bg-white/10 ml-2"></div>
+<div class="flex gap-2">
+<a class="size-8 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="size-8 flex items-center justify-center rounded-lg hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+</footer>
+<!-- Decorative Background Glows -->
+<div class="fixed top-1/4 -left-20 size-[500px] bg-primary/5 blur-[150px] rounded-full -z-10"></div>
+<div class="fixed bottom-1/4 -right-20 size-[400px] bg-primary/10 blur-[120px] rounded-full -z-10"></div>
+</div>
+</body></html>
